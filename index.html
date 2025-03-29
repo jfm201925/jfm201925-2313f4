@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Redirection</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: #e0e0e0;
+                font-family: sans-serif;
+                padding-top: 100px;
+            }
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 600px;
+            }
+            .center-on-narrow {
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+            }
+            .button-td, .button-a {
+                transition: all 100ms ease-in;
+            }
+            .button-td:hover, .button-a:hover {
+                background: #555555 !important;
+                border-color: #555555 !important;
+            }
+            .button-td {
+                text-align: center;
+            }
+            .button-a {
+                background: #222222;
+                border: 10px solid #222222;
+                padding: 10px 20px;
+                color: #ffffff;
+                font-size: 13px;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 3px;
+                font-weight: bold;
+            }
+            @media screen and (max-width: 600px) {
+                table {
+                    width: 100% !important;
+                }
+                .button-a {
+                    width: 100% !important;
+                    padding: 12px 0 !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff">
+            <tr>
+                <td style="padding: 40px; text-align: center; font-size: 15px; color: #555555;">
+                    Website redirection.<br>
+                    The official website has moved to the new (old) address - jayface.com. <br><br>
+                    <table cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tr>
+                            <td class="button-td">
+                                <a href="https://jayface.com" title="Redirect to jayface.com" target="_parent" class="button-a">
+                                    Click to redirect
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
